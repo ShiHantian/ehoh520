@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(200, 169, 209);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255,105,180);
+    transform: rotate(-45deg);
+    top: -20px; /* Start slightly above the viewport */
+    animation: fall 5s linear infinite;
+}
+
+.heart:before, .heart:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255,105,180);
+}
+
+.heart:before {
+    top: -10px;
+    left: 0;
+}
+
+.heart:after {
+    left: 10px;
+    top: 0;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(-45deg);
+    }
+}

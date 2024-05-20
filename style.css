@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* 背景色可自行调整 */
+}
+
+button {
+    background-color: #a64ca6; /* 紫色 */
+    color: white;
+    border: none;
+    border-radius: 25px; /* 圆角 */
+    padding: 30px 80px;
+    font-size: 56px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: absolute;
+}
+
+button:hover {
+    background-color: #903290; /* 较深的紫色 */
+    transform: scale(1.05);
+}
+
+/* Love Button 初始位置 */
+#loveButton {
+    left: 20%; /* 可根据需要调整 */
+    top: 45%;  /* 可根据需要调整 */
+}
+
+/* Away Button 初始位置 */
+#awayButton {
+    left: 63%; /* 可根据需要调整 */
+    top: 45%;  /* 可根据需要调整 */
+}
+
+/* Average Time Button 位置 */
+#averageTimeButton {
+    right: 20px;
+    top: 30px;
+    position: fixed;
+    background-color: #6c6cff;
+    font-size: 28px;
+    padding: 16px 24px;
+}
+
+#pageTitle {
+    text-align: center;
+    margin-top: -60vh; /* 调整标题距离页面顶部的距离 */
+    font-size: 60px; /* 调整标题字体大小 */
+    font-family: Arial, sans-serif; /* 设置标题字体 */
+    color: #333; /* 设置标题颜色 */
+    position: relative;
+    top: 50px; /* 根据需要调整标题的垂直位置 */
+}
+
+
+#videoPlayer {
+    display: block;
+    margin: 0 auto;
+    width: 40%; /* Adjust as needed */
+    height: auto;
+}
+
+
